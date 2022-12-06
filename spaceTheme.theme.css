@@ -1,0 +1,27 @@
+/**
+  * @name Space Theme
+  * @source https://github.com/Vibhore-personal-public/spaceTheme
+  * @updateUrl https://github.com/Vibhore-personal-public/spaceTheme
+  * @website 
+  * @author vib1240n
+  * @version 1.0.0
+  * @description Personal space theme
+  */
+
+@import url(https://github.com/Vibhore-personal-public/spaceTheme/blob/main/src/spacetheme.css);
+
+:root {
+  --ocean-home-icon: url(https://cdn.discordapp.com/attachments/468141324906921984/874999698426068992/ocean-home-icon.png);
+  --ocean-color1: #000000;
+  --ocean-color2: #000000;
+  --ocean-color3: #1487b1;
+  --main-bg: rgba(0, 0, 0, 0.7);
+  --watermark-filter-invert: 0%;
+  --watermark-filter-sepia: 50%;
+  --watermark-filter-saturate: 3000%;
+  --watermark-filter-hue-rotate: 150deg;
+  --watermark-filter-brightness: 100%;
+  --watermark-filter-contrast: 200%;
+  --ocean-emoji-picker-color: 150deg;
+  --font-primary: "Jetbrains Mono";
+}
