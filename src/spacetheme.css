@@ -15,7 +15,7 @@
 .wrapper-1_HaEi,
 .wrapper-22ayhK,
 body {
-  background: url(https://i.imgur.com/GOniPl0.jpeg);
+  background: var(--main-background-url);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

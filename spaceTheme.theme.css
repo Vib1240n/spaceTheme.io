@@ -2,15 +2,16 @@
   * @name Space Theme
   * @source https://github.com/Vibhore-personal-public/spaceTheme
   * @updateUrl https://github.com/Vibhore-personal-public/spaceTheme
-  * @website 
+  * @website https://vibhore-personal-public.github.io/spaceTheme.io/src/spacetheme.css
   * @author vib1240n
   * @version 1.0.0
   * @description Personal space theme
   */
 
-@import url(https://github.com/Vibhore-personal-public/spaceTheme/blob/main/src/spacetheme.css);
+@import url(https://vibhore-personal-public.github.io/spaceTheme.io/src/spacetheme.css);
 
 :root {
+  --main-background-url: url(https://i.imgur.com/GOniPl0.jpeg);
   --ocean-home-icon: url(https://cdn.discordapp.com/attachments/468141324906921984/874999698426068992/ocean-home-icon.png);
   --ocean-color1: #000000;
   --ocean-color2: #000000;
