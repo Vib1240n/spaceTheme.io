@@ -27,7 +27,7 @@ body {
 .privateChannels-oVe7HL,
 .sidebar-1tnWFu > .scrollerBase-_bVAAt,
 .sidebarRegionScroller-FXiQOh {
-  background: rgba(47, 49, 54, 0);
+  background: rgba(0, 0, 0, 0);
 }
 .panels-3wFtMD {
   background: rgba(41, 43, 47, 0);
@@ -150,9 +150,6 @@ body {
   background-color: transparent;
   color: rgb(255, 255, 255);
   width: 100%;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 10px;
   font-weight: 500;
   font-size: smaller;
   overflow: hidden;
@@ -316,13 +313,12 @@ body {
 }
 .scroller-1bVxF5 {
   background-color: rgba(250, 250, 250, 0.5);
-  border-radius: 20px;
+  border-radius: 10px;
 }
-.label-2gNW3x {
+/* .label-2gNW3x {
   color: var(--ocean-color2);
-}
+} */
 .colorDefault-CDqZdO.focused-3qFvc8 {
-  background-color: var(--ocean-color3);
   color: var(--ocean-color1);
 }
 
@@ -667,7 +663,7 @@ button[aria-label="Send a gift"] {
 .cozy-VmLDNB .timestamp-p1Df1m,
 .content-3spvdd,
 .label-2Pe5f1 {
-  color: rgba(250, 250, 250, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 .button-3bklZh,
 .button-3bklZh:hover,
@@ -943,10 +939,6 @@ button[aria-label="Send a gift"] {
   color: var(--ocean-color2);
 }
 
-.item-1OdjEX {
-  color: var(--ocean-color1);
-}
-
 ::-webkit-scrollbar {
   width: 3px !important;
   height: 8px !important;
@@ -1058,7 +1050,7 @@ button[aria-label="Send a gift"] {
   color: white;
 }
 .link-39sEB3 {
-  color: rgb(250, 250, 250);
+  color: rgb(255, 255, 255);
   background-color: var(--main-bg);
   border-radius: 20px;
   backdrop-filter: blur(10px);
@@ -1107,24 +1099,23 @@ button[aria-label="Send a gift"] {
 .scroller-1ox3I2 {
   backdrop-filter: blur(10px);
 }
-/* .content-2a4AW9 {
-  background-color: var(--main-bg);
+.content-2a4AW9 {
+  background-color: transparent;
+  position: relative;
+  /* background-color: var(--main-bg); */
   border-radius: 20px;
   padding: 10px;
-  backdrop-filter: 10px;
-} */
+  /* backdrop-filter: blur(10px); */
+}
 .messageListItem-ZZ7v6g {
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  background-color: var(--main-bg);
+  background-color: rgba(0, 0, 0, 0.5);
 }
-/* .scroller-1bVxF5.thin-31rlnD.scrollerBase-_bVAAt {
-  border-radius: 20px;
-} */
+
 .styleFlexible-x0_sIC {
-  border-radius: 20px;
-  background: transparent;
-  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .button-3bklZh.selected-69H4ua {
@@ -1148,4 +1139,84 @@ button[aria-label="Send a gift"] {
 .anchor-1MIwyf.anchorUnderlineOnHover-2qPutX {
   color: rgb(25, 128, 255);
   text-decoration: underline;
+}
+
+.wrapper-z5ab_q {
+  overflow: visible;
+  width: 8px;
+  height: 48px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: center;
+  contain: layout size;
+  animation: blink infinite 3s linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.item-2LIpTv {
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.channelName-3KPsGw,
+.subtitle-3PyFgf {
+  color: white;
+}
+
+.channelName-3KPsGw {
+  font-weight: 300;
+  font-style: italic;
+}
+.unread-36eUEm.unreadRelevant-2f-VSK {
+  animation: blink infinite 3s linear;
+  background-color: white;
+}
+.wrapper-30-Nkg {
+  margin: 10px;
+}
+.cozy-VmLDNB.wrapper-30-Nkg {
+  padding-left: 50px;
+}
+.avatar-2e8lTP {
+  position: absolute;
+  left: 1px;
+  margin-top: calc(4px - 0.125rem);
+  width: 40px;
+  height: 40px;
+  border-radius: 20%;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  pointer-events: none;
+  z-index: 1;
+}
+.modeConnected-NrO4cP .name-28HaxV,
+.modeConnected-NrO4cP:hover .name-28HaxV,
+.modeSelected-3DmyhH .name-28HaxV,
+.modeSelected-3DmyhH:hover .name-28HaxV,
+.modeUnread-3Cxepe .name-28HaxV,
+.modeUnread-3Cxepe:hover .name-28HaxV,
+.notInteractive-2tFrlE.modeConnected-NrO4cP .name-28HaxV,
+.notInteractive-2tFrlE.modeSelected-3DmyhH .name-28HaxV {
+  color: var(--interactive-active);
+  font-weight: var(--font-weight-semibold-1x-light-theme, 500);
+  animation: blink infinite 3s linear;
 }
