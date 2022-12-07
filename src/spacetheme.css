@@ -1,3 +1,29 @@
+/**
+  * @name Test Space Theme
+  * @source Local
+  * @updateUrl local development
+  * @website none
+  * @author vib1240n
+  * @version 1.0.0-beta.1
+  * @description Personal space theme
+  */
+:root {
+  --main-background-url: url(https://i.imgur.com/GOniPl0.jpeg);
+  --ocean-home-icon: url(https://cdn.discordapp.com/attachments/468141324906921984/874999698426068992/ocean-home-icon.png);
+  --ocean-color1: #000000;
+  --ocean-color2: #000000;
+  --ocean-color3: #1487b1;
+  --main-bg: rgba(0, 0, 0, 0.7);
+  --watermark-filter-invert: 0%;
+  --watermark-filter-sepia: 50%;
+  --watermark-filter-saturate: 3000%;
+  --watermark-filter-hue-rotate: 150deg;
+  --watermark-filter-brightness: 100%;
+  --watermark-filter-contrast: 200%;
+  --ocean-emoji-picker-color: 150deg;
+  --font-primary: "Jetbrains Mono";
+}
+
 #app-mount .container-2cd8Mz,
 .app-2CXKsg,
 .bg-1QIAus,
@@ -146,7 +172,10 @@ body {
   color: var(--ocean-color1);
 }
 
-.cozyMessage-1DWF9U .contents-2MsGLg > .markup-eYLPri:not(:empty) {
+.cozyMessage-1DWF9U
+  .contents-2MsGLg
+  .message-reply-context-1050172813710999614
+  > .markup-eYLPri:not(:empty) {
   background-color: transparent;
   color: rgb(255, 255, 255);
   width: 100%;
@@ -1000,7 +1029,7 @@ button[aria-label="Send a gift"] {
 }
 .repliedTextPreview-1bvxun,
 .threadMessageAccessoryPreview-13YRmc {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 187, 0);
   font-weight: 500;
   font-style: italic;
   text-decoration: underline;
@@ -1090,9 +1119,9 @@ button[aria-label="Send a gift"] {
 .attachButtonPlus-3IYelE {
   fill: white;
 }
-.cozy-VmLDNB .contents-2MsGLg {
-  padding: 5px;
-}
+/* .cozy-VmLDNB .contents-2MsGLg {
+  padding-left: 15px;
+} */
 .buttons-3dF5Kd .wrapper-2vIMkT {
   color: white;
 }
@@ -1187,11 +1216,10 @@ button[aria-label="Send a gift"] {
   margin: 10px;
 }
 .cozy-VmLDNB.wrapper-30-Nkg {
-  padding-left: 50px;
+  padding-left: 72px;
 }
 .avatar-2e8lTP {
   position: absolute;
-  left: 1px;
   margin-top: calc(4px - 0.125rem);
   width: 40px;
   height: 40px;
